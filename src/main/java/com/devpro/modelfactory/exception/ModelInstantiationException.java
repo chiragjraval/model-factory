@@ -1,4 +1,4 @@
-package com.chirag.model.factory.exception;
+package com.devpro.modelfactory.exception;
 
 public class ModelInstantiationException extends Exception {
 
