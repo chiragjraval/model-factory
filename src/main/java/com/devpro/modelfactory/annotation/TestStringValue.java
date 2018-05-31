@@ -5,11 +5,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.devpro.modelfactory.generator.simple.SimpleStringValueGenerator;
+import com.devpro.modelfactory.generator.simple.StringGenerator;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
 public @interface TestStringValue {
 	String defaultValue() default "default";
-	Class<SimpleStringValueGenerator> valueGenerator() default SimpleStringValueGenerator.class;
+	Class<StringGenerator> valueGenerator() default StringGenerator.class;
 }
