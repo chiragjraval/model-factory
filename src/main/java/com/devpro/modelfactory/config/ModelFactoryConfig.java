@@ -5,38 +5,38 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.devpro.modelfactory.generator.config.BaseGeneratorConfig;
+import com.devpro.modelfactory.generator.ValueGenerator;
 
 public class ModelFactoryConfig {
 
 	private Class<?> modelType;
-	private Map<Field, BaseGeneratorConfig<?>> generatorConfigs;
+	private Map<Field, ValueGenerator<?>> valueGenerators;
 		
 	public ModelFactoryConfig(Class<?> modelType) {
 		super();
 		this.modelType = modelType;
-		this.generatorConfigs = new HashMap<>();
+		this.valueGenerators = new HashMap<>();
 	}
 
-	public ModelFactoryConfig(Class<?> modelType, Map<Field, BaseGeneratorConfig<?>> generatorConfigs) {
+	public ModelFactoryConfig(Class<?> modelType, Map<Field, ValueGenerator<?>> valueGenerators) {
 		super();
 		this.modelType = modelType;
-		this.generatorConfigs = generatorConfigs;
+		this.valueGenerators = valueGenerators;
 	}
 	
 	public Class<?> getModelType() {
 		return this.modelType;
 	}
 
-	public Map<Field, BaseGeneratorConfig<?>> getGeneratorConfigs() {
-		return Collections.unmodifiableMap(this.generatorConfigs);
+	public Map<Field, ValueGenerator<?>> getValueGenerators() {
+		return Collections.unmodifiableMap(this.valueGenerators);
 	}
 	
-	public void addGeneratorConfig(Field field, BaseGeneratorConfig<?> generatorConfig) {
-		this.generatorConfigs.put(field, generatorConfig);
+	public void addValueGenerator(Field field, ValueGenerator<?> valueGenerator) {
+		this.valueGenerators.put(field, valueGenerator);
 	}
 	
-	public void removeGeneratorConfig(Field field) {
-		this.generatorConfigs.remove(field);
+	public void removeValueGenerator(Field field) {
+		this.valueGenerators.remove(field);
 	}
 }

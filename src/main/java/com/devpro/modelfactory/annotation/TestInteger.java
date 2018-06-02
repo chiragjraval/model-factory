@@ -5,11 +5,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.devpro.modelfactory.generator.simple.LongGenerator;
+import com.devpro.modelfactory.generator.IntegerGenerator;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
-public @interface TestLongValue {
-	long defaultValue() default 1L;
-	Class<LongGenerator> valueGenerator() default LongGenerator.class;
+public @interface TestInteger {
+	int defaultValue() default 1;
+	Class<IntegerGenerator> valueGenerator() default IntegerGenerator.class;
 }

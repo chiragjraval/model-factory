@@ -1,8 +1,8 @@
 package com.devpro.modelfactory.bean;
 
-import com.devpro.modelfactory.annotation.TestIntegerValue;
-import com.devpro.modelfactory.annotation.TestLongValue;
-import com.devpro.modelfactory.annotation.TestStringValue;
+import com.devpro.modelfactory.annotation.TestInteger;
+import com.devpro.modelfactory.annotation.TestLong;
+import com.devpro.modelfactory.annotation.TestString;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,13 +13,13 @@ import lombok.ToString;
 @ToString(of = {"id", "name"})
 public class Student {
 
-	@TestLongValue(defaultValue=71L)
+	@TestLong(defaultValue=71L)
 	private long id;
 	
-	@TestStringValue(defaultValue="Chirag")
+	@TestString(defaultValue="Chirag")
 	private String name;
 	
-	@TestIntegerValue(defaultValue=10000)
+	@TestInteger(defaultValue=10000)
 	private Integer salary;
 	
 }
