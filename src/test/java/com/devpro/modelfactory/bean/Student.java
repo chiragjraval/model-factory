@@ -13,13 +13,13 @@ import lombok.ToString;
 @ToString(of = {"id", "name"})
 public class Student {
 
-	@TestLong(defaultValue=71L)
+	@TestLong(value=71L)
 	private long id;
 	
-	@TestString(defaultValue="Chirag")
+	@TestString(value="Chirag")
 	private String name;
 	
-	@TestInteger(defaultValue=10000)
-	private Integer salary;
+	@TestInteger(value=100)
+	private Integer marks;
 	
 }

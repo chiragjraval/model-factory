@@ -2,15 +2,19 @@ package com.devpro.modelfactory.generator;
 
 public class StringGenerator implements ValueGenerator<String> {
 
-	private String defaultValue;
-
-	public StringGenerator(String defaultValue) {
-		this.defaultValue = defaultValue;
-	}
+	private String value;
 
 	@Override
 	public String generate(Object ctx) {
-		return defaultValue;
+		return value;
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
 	}
 
 }

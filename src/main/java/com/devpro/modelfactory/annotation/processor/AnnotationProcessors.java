@@ -43,7 +43,12 @@ public class AnnotationProcessors {
 		}
 	}
 	
+	public static boolean isRegisteredAnnotationProcessor(Class<? extends Annotation> annotation) {
+		return annotationProcessors.containsKey(annotation);
+	}
+	
 	public static AnnotationProcessor<?> getAnnotationProcessor(Class<? extends Annotation> annotation) {
 		return annotationProcessors.get(annotation);
 	}
+	
 }

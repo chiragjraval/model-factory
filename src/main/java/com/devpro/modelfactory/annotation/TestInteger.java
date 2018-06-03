@@ -10,6 +10,6 @@ import com.devpro.modelfactory.generator.IntegerGenerator;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
 public @interface TestInteger {
-	int defaultValue() default 1;
-	Class<IntegerGenerator> valueGenerator() default IntegerGenerator.class;
+	int value() default 1;
+	Class<? extends IntegerGenerator> generatorType() default IntegerGenerator.class;
 }

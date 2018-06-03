@@ -10,6 +10,6 @@ import com.devpro.modelfactory.generator.StringGenerator;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
 public @interface TestString {
-	String defaultValue() default "default";
-	Class<StringGenerator> valueGenerator() default StringGenerator.class;
+	String value() default "default";
+	Class<? extends StringGenerator> generatorType() default StringGenerator.class;
 }

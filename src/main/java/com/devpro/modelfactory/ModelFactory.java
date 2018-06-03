@@ -1,6 +1,8 @@
 package com.devpro.modelfactory;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -15,7 +17,7 @@ public class ModelFactory {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ModelFactory.class);
 	
-	public static <T> T getObject(Class<T> clazz) throws ModelInstantiationException {
+	public static <T> T getData(Class<T> clazz) throws ModelInstantiationException {
 		try {
 			T obj = clazz.newInstance();
 			ModelFactoryConfig modelFactoryConfig = ModelFactoryConfigGenerator.getModelFactoryConfig(clazz);
@@ -34,4 +36,11 @@ public class ModelFactory {
 		}
 	}
 	
+	public static <T> List<T> getData(Class<T> clazz, int size) throws ModelInstantiationException {
+		List<T> results = new ArrayList<>();
+		for(int i=0; i<size; i++) {
+			results.add(getData(clazz));
+		}
+		return results;
+	}
 }
