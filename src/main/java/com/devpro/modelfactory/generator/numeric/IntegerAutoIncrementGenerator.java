@@ -1,4 +1,4 @@
-package com.devpro.modelfactory.generator;
+package com.devpro.modelfactory.generator.numeric;
 
 public class IntegerAutoIncrementGenerator extends IntegerGenerator {
 

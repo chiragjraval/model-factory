@@ -7,8 +7,8 @@ import com.devpro.modelfactory.annotation.TestString;
 import com.devpro.modelfactory.exception.ExceptionHandler;
 import com.devpro.modelfactory.exception.ExceptionHandlerTemplate;
 import com.devpro.modelfactory.exception.ModelInstantiationException;
-import com.devpro.modelfactory.generator.StringGenerator;
 import com.devpro.modelfactory.generator.ValueGenerator;
+import com.devpro.modelfactory.generator.string.StringGenerator;
 
 public class TestStringProcessor implements AnnotationProcessor<String> {
 	

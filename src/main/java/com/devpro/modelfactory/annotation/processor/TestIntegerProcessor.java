@@ -7,8 +7,8 @@ import com.devpro.modelfactory.annotation.TestInteger;
 import com.devpro.modelfactory.exception.ExceptionHandler;
 import com.devpro.modelfactory.exception.ExceptionHandlerTemplate;
 import com.devpro.modelfactory.exception.ModelInstantiationException;
-import com.devpro.modelfactory.generator.IntegerGenerator;
 import com.devpro.modelfactory.generator.ValueGenerator;
+import com.devpro.modelfactory.generator.numeric.IntegerGenerator;
 
 public class TestIntegerProcessor implements AnnotationProcessor<Integer> {
 

@@ -1,4 +1,6 @@
-package com.devpro.modelfactory.generator;
+package com.devpro.modelfactory.generator.numeric;
+
+import com.devpro.modelfactory.generator.ValueGenerator;
 
 public class LongGenerator implements ValueGenerator<Long> {
 	

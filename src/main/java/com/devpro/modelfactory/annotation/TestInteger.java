@@ -5,7 +5,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.devpro.modelfactory.generator.IntegerGenerator;
+import com.devpro.modelfactory.generator.numeric.IntegerGenerator;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})

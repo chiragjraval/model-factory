@@ -7,8 +7,8 @@ import com.devpro.modelfactory.annotation.TestLong;
 import com.devpro.modelfactory.exception.ExceptionHandler;
 import com.devpro.modelfactory.exception.ExceptionHandlerTemplate;
 import com.devpro.modelfactory.exception.ModelInstantiationException;
-import com.devpro.modelfactory.generator.LongGenerator;
 import com.devpro.modelfactory.generator.ValueGenerator;
+import com.devpro.modelfactory.generator.numeric.LongGenerator;
 
 public class TestLongProcessor implements AnnotationProcessor<Long> {
 

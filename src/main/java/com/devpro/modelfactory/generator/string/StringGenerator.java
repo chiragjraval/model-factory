@@ -1,4 +1,6 @@
-package com.devpro.modelfactory.generator;
+package com.devpro.modelfactory.generator.string;
+
+import com.devpro.modelfactory.generator.ValueGenerator;
 
 public class StringGenerator implements ValueGenerator<String> {
 
